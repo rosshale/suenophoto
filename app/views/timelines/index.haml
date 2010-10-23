@@ -1,6 +1,9 @@
-= fb_connect_async_js(Facebooker2.app_id).html_safe
+= fb_connect_async_js.html_safe
 
 %h2 SuenoPhoto
 
 .facebook_login
   <fb:login-button></fb:login-button>
+
+- if current_facebook_user
+  Welcome to SuenoPhoto #{current_facebook_user.first_name} #{current_facebook_user.last_name}!
