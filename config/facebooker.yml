@@ -1,0 +1,19 @@
+development:
+  api_key: 20b2ca451bf42baebf3b484be509ffe9
+  secret: 25b50e5204536fe780ce95eb8cbfd28d
+  app_id: 163514933672433
+
+test:
+  api_key: 20b2ca451bf42baebf3b484be509ffe9
+  secret: 25b50e5204536fe780ce95eb8cbfd28d
+  app_id: 163514933672433
+
+staging:
+  api_key: e1d405081673ea958d332922bc37c67d
+  secret: 80b1f95988ff7a7ec526ebe01f685f64
+  app_id: 150812801610925
+
+production:
+  api_key: 2b6fbe7ae1fd594bd5b79453116686b3
+  secret: 9a0fd1dfc2c0850cebbd02c503c36b59
+  app_id: 110962172293487
