@@ -3,7 +3,33 @@
 %h2 SuenoPhoto
 
 .facebook_login
-  <fb:login-button></fb:login-button>
+  = link_to_function "Log Into Facebook", "facebook_login()"
 
 - if current_facebook_user
   Welcome to SuenoPhoto #{current_facebook_user.first_name} #{current_facebook_user.last_name}!
+  %br
+  %br
+  Here Some Photos From My Albums:
+  %br
+  %br
+  - current_facebook_user.albums.each do |album|
+    - album.photos.each do |photo|
+      .photo
+        = image_tag photo.picture
+        %br
+        = photo.created_time
+
+  .clear
+  %br
+  %br
+  
+  Here Some Photos I'm In (#{current_facebook_user.photos.size}):
+  %br
+  %br
+  - current_facebook_user.photos.each do |photo|
+    .photo
+      = image_tag photo.picture
+      %br
+      = photo.created_time
+  
+  .clear

@@ -1,7 +1,9 @@
 class TimelinesController < ApplicationController
 
   def index
-    current_facebook_user.fetch if current_facebook_user 
+    if current_facebook_user
+      current_facebook_user.fetch
+    end
   end
 
 end
