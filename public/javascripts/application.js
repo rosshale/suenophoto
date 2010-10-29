@@ -2,7 +2,7 @@ function facebook_login() {
   FB.login(function(response) {
     if( response.session ) {
       if( response.perms ) {
-        window.location = "/"
+        window.location = "/timelines"
       } else {
         // user is logged in, but did not grant any permissions
         alert("no permission for you!")

@@ -1,20 +1,16 @@
 .photo {
   float: left;
-  padding: 5px;
-}
+  padding: 5px; }
 
 .clear {
-  clear: both;
-}
+  clear: both; }
 
 .timeline_container {
   border: 1px solid black;
-  width: 9999px;
-}
+  width: 9999px; }
 
 .month {
   border: 1px solid blue;
   float: left;
   margin: 5px;
-  width: 500px;
-}
+  width: 500px; }
